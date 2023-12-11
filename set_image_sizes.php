@@ -52,11 +52,9 @@ function custom_divi_image_sizes( $sizes ) {
             'height' => '270',
             'crop' => true
         ),
-    ),
-);
-
-return array_merge( $sizes, $custom_sizes );
-}
+    );
+    return array_merge( $sizes, $custom_sizes );
+};
 
 add_filter( 'et_theme_image_sizes', 'custom_divi_image_sizes' );
 
