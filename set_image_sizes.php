@@ -44,7 +44,7 @@ function et_pb_post_main_image_height_customf($height) {
     return '400';
 }
 
-add_image_size( 'et-pb-post-main-image-fullwidth', 1080, 400, true );
+add_image_size( 'et-pb-post-main-image-fullwidth', 1080, 400, array('center', 'center') );
 
 function wpb_custom_image_sizes( $size_names ) {
     $new_sizes = array(
